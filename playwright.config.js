@@ -45,10 +45,11 @@ const config = {
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
+        screenshot: 'on',
+        trace: 'retain-on-failure', // off, on
       },
     },
-
-    {
+    /* {
       name: 'firefox',
       use: {
         ...devices['Desktop Firefox'],
@@ -60,7 +61,7 @@ const config = {
       use: {
         ...devices['Desktop Safari'],
       },
-    },
+    }, */
   ],
 };
 
